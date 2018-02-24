@@ -1,0 +1,35 @@
+project.ext {
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.1",
+            applicationId    : "com.greenshop.snowson.myapplication",
+            minSdkVersion    : 17,
+            targetSdkVersion : 27,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    dependVersion = [
+            support: "27.0.2"
+    ]
+
+    jdkVersion = 8
+
+    javaVersion = [
+            sourceCompatibility: this.&getJavaVersion(),
+            targetCompatibility: this.&getJavaVersion()
+    ]
+}
+
+def getJavaVersion() {
+    switch (project.ext.jdkVersion) {
+        case 6:
+            return JavaVersion.VERSION_1_6
+        case 7:
+            return JavaVersion.VERSION_1_7
+        case 8:
+            return JavaVersion.VERSION_1_8
+        default:
+            return JavaVersion.VERSION_1_8
+    }
+}

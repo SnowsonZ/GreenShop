@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+apply from: "${project.rootDir}/common_config.gradle"
+android {
+    compileSdkVersion project.ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId project.ext.android.applicationId
+        minSdkVersion project.ext.android.minSdkVersion
+        targetSdkVersion project.ext.android.targetSdkVersion
+        versionCode project.ext.android.versionCode
+        versionName project.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility project.ext.javaVersion.sourceCompatibility
+        targetCompatibility project.ext.javaVersion.targetCompatibility
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:${project.ext.dependVersion.support}"
+    implementation "com.android.support:support-v4:${project.ext.dependVersion.support}"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+}
