@@ -23,11 +23,47 @@ android {
 }
 
 dependencies {
+    //android support
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "com.android.support:appcompat-v7:${project.ext.dependVersion.support}"
     implementation "com.android.support:support-v4:${project.ext.dependVersion.support}"
+    implementation "com.android.support:design:${project.ext.dependVersion.support}"
+    implementation "com.android.support:recyclerview-v7:${project.ext.dependVersion.support}"
+    implementation "com.android.support:cardview-v7:${project.ext.dependVersion.support}"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //ui
+    implementation 'me.yokeyword:fragmentation:1.2.5'
+    implementation 'cn.bingoogolapple:bga-swipebacklayout:1.1.0@aar'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+    //rxjava
+    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.2.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+
+    //dragger2
+    implementation 'com.google.dagger:dagger:2.14.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.14.1'
+
+    //http
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+
+
+
 
 }
