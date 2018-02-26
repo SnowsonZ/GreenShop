@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.greenshop.snowson.myapplication.ApplicationComponent;
+
 /**
  * author: snowson
  * created on: 18-2-25 下午10:54
