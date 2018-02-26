@@ -1,9 +1,8 @@
-package com.will.weiyue.ui.base;
+package com.greenshop.snowson.myapplication.ui.base;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.animation.Animation;
 
@@ -19,7 +18,7 @@ import me.yokeyword.fragmentation.anim.FragmentAnimator;
  * author: Will .
  * date: 2017/9/2 .
  */
-public class SupportFragment extends RxFragment implements ISupportFragment {
+public abstract class SupportFragment extends RxFragment implements ISupportFragment {
 
     final SupportFragmentDelegate mDelegate = new SupportFragmentDelegate(this);
     protected FragmentActivity _mActivity;
