@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.greenshop.snowson.myapplication.ApplicationComponent;
+import com.greenshop.snowson.myapplication.component.ApplicationComponent;
 
 /**
  * author: snowson

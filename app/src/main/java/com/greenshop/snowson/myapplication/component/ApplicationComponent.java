@@ -1,4 +1,4 @@
-package com.greenshop.snowson.myapplication;
+package com.greenshop.snowson.myapplication.component;
 
 /**
  * Created by snowson on 18-2-26.

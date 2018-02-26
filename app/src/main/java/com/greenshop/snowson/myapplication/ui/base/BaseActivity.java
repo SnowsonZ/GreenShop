@@ -2,23 +2,19 @@ package com.greenshop.snowson.myapplication.ui.base;
 
 import android.app.Dialog;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.greenshop.snowson.myapplication.ApplicationComponent;
-import com.greenshop.snowson.myapplication.DialogHelper;
+import com.greenshop.snowson.myapplication.util.DialogHelper;
 import com.greenshop.snowson.myapplication.R;
 import com.greenshop.snowson.myapplication.ui.inter.IBase;
-import com.greenshop.snowson.myapplication.ui.view.MultiStateView;
 import com.greenshop.snowson.myapplication.ui.view.SimpleMultiStateView;
 import com.trello.rxlifecycle2.LifecycleTransformer;
 
 import javax.inject.Inject;
 
-import butterknife.BindViews;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cn.bingoogolapple.swipebacklayout.BGASwipeBackHelper;

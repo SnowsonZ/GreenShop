@@ -1,9 +1,11 @@
-package com.greenshop.snowson.myapplication;
+package com.greenshop.snowson.myapplication.util;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.view.Gravity;
 import android.view.Window;
+
+import com.greenshop.snowson.myapplication.R;
 
 /**
  * Created by snowson on 18-2-26.
